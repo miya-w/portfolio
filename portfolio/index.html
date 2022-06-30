@@ -4,21 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="navBar">
+    <div class=" nav-window">
+      <nav>
+        <a href="#">
+          Home
+        </a>
+        <a href="#">
+         About
+        </a>
+        <a href="#">
+          Work
+        </a>
+        <a href="#">
+          Skill
+        </a>
+        <a href="#">
+          Contact
+        </a>
+      </nav>
+    </div>
+    
+  </div>
   <div class="headerGit">
     <span class="hovertext" data-hover="Check my Github">
     <div class="gitLogo">
       <a href="https://github.com/miya-w" target="_blank">
-        <img id="gitLogoWave1" src="images/Group273.png" alt="git" width="80px" height="80px">
+        <img id="gitLogoWave1" src="images/Group274.png" alt="git" width="80px" height="80px">
       </a>
     </span>
     </div>
   </div>
+
   <header class="header">
     <!-- <p class="site-title-sub">Web designer's portfolio</p> -->
     <img src="images/Group 263.svg" alt="">
@@ -27,129 +51,168 @@
     <p class="site-description">Check out some of my works.
       
     </p>
-    <div class="buttons">
+    <div class="button-header">
       <a class="button" href="#about">LEARN MORE</a>
       <a class="button button-showy" href="#contact">SEND MESSAGE</a>
     </div>
   </header>
+
   <section class="about" id="about">
-    <h2 class="heading">ABOUT ME</h2>
-    <div class="aboutAni">
-      <h2 class="about-text">
-        <pre id="typewriter">
-          <span class="var-highlight">var</span> Miah = {
-                                    type: <span class="string-highlight">'FrontEndDeveloperAndDesigner'</span>,
-                                    location: <span class="string-highlight">'Melbourne'</span>,
-                                    hobby:[<span class="string-highlight">'Movie','bushWalking','brunch'];</span>,
-                                    code:[<span class="string-highlight">'Javascript','HTML', 'CSS' ];</span>
-                                    design:[<span class="string-highlight">'Figama','Photoshop', 'Illustrator' ];</span>
-                                      }; 
-                        while(Miah . awake)<span class="string-highlight">{</span>
-                        <span class="string-highlight">Miah.doCode();</span>
-                          }
-          </pre> 
-                                                                                      
-                                                                                      
-      </h2>
+    <div class="window">
+      <div class="titlebar">
+        <div class="buttons">
+          <div class="close">
+            <a class="closebutton" href="#"><span><strong>x</strong></span></a>
+            <!-- close button link -->
+          </div>
+          <div class="minimize">
+            <a class="minimizebutton" href="#"><span><strong>&ndash;</strong></span></a>
+            <!-- minimize button link -->
+          </div>
+          <div class="zoom">
+            <a class="zoombutton" href="#"><span><strong>+</strong></span></a>
+            <!-- zoom button link -->
+          </div>
+        </div>
+    
+        <!-- window title -->
+      </div>
+      <div class="content">
+        <h3 class="heading">About Me</h3>
+        <!-- window content -->
+        <div class="aboutAni">
+          <p class="about-text">
+            <pre id="typewriter">
+              <span class="var-highlight">var</span> Miah = {
+                                        type: <span class="string-highlight">'FrontEndDeveloperAndDesigner'</span>,
+                                        location: <span class="string-highlight">'Melbourne'</span>,
+                                        hobby:[<span class="string-highlight">'Movie','bushWalking','brunch'];</span>,
+                                        code:[<span class="string-highlight">'Javascript','HTML', 'CSS' ];</span>
+                                        design:[<span class="string-highlight">'Figama','Photoshop', 'Illustrator' ];</span>
+                                          }; 
+                            while(Miah . awake)<span class="string-highlight">{</span>
+                            <span class="string-highlight">Miah.doCode();</span>
+                              }
+              </pre> 
+                                                                                     
+                                                                                          
+            </p>
+        </div>
+
+      </div>
     </div>
+
+    
 
     
   </section>
   <section class="works">
-    <h2 class="heading">WORKS</h2>
-    <div class="works-wrapper">
+ 
+  
+          <h2 class="heading">WORKS</h2>
+          <div class="works-wrapper">
       
-      <!-- <div class="workImage">
-        <img src="images/Group 268.svg" alt="">
-      </div>
-      <h2>Sorry! <br> We are working on it!</h2>
-      </div> -->
-    <div class="work-box">
-      <a href="https://miya-w.github.io/portfolio/work-UIUX/" target="_blank">
-        <img src="images/App-title.png"width="360px"height="250px">
-      <h2 class="work-title">UI/UX Design</h2>
-      </a>   
+            <!-- <div class="workImage">
+              <img src="images/Group 268.svg" alt="">
+            </div>
+            <h2>Sorry! <br> We are working on it!</h2>
+            </div> -->
+          <div class="work-box">
+            <a href="https://miya-w.github.io/portfolio/work-UIUX/" target="_blank">
+              <img src="images/folder.svg"with="200px" height="180px">
+            <h2 class="work-title">UI/UX Design</h2>
+            </a>   
+          </div>
+      
+          <div class="work-box">
+            <a href="https://miya-w.github.io/portfolio/work-ProductDesign/" target="_blank">
+              <img src="images/folder.svg" with="200px" height="180px">
+            <h2 class="work-title">Product Design</h2>
+            </a>   
+          </div>
+          <div class="work-box">
+            <a href="https://miya-w.github.io/portfolio/work-webDevDesign/" target="_blank">
+              <img src="images/folder.svg"with="200px" height="180px">
+            <h2 class="work-title">Web design/Development</h2>
+            </a>   
+          </div>
+          <div class="work-box">
+            <a href="https://medium.com/@miya.miah.w" target="_blank">
+              <img src="images/folder.svg" with="200px" height="180px">
+            <h2 class="work-title">UX Case Study</h2>
+            </a> 
+          </div>
+      
+        
     </div>
-
-    <div class="work-box">
-      <a href="https://miya-w.github.io/portfolio/work-ProductDesign/" target="_blank">
-        <img src="images/Product-title.png"width="360px"height="250px">
-      <h2 class="work-title">Product Design</h2>
-      </a>   
     </div>
-    <div class="work-box">
-      <a href="https://miya-w.github.io/portfolio/work-webDevDesign/" target="_blank">
-        <img src="images/web-TravelMelbourne.png"width="360px"height="250px">
-      <h2 class="work-title">Web design/Development</h2>
-      </a>   
-    </div>
-    <div class="work-box">
-      <a href="https://medium.com/@miya.miah.w" target="_blank">
-        <img src="images/Group 268.png">
-      <h2 class="work-title">UX Case Study</h2>
-      </a>   
-    </div>
+  </div>
   </section>
-  <section class="skills">
-    <h2 class="heading">MY SKILLS</h2>
-    <div class="skills-wrapper">
-      <div class="skill-box">
-      
-        <div class="skill-title">IDEA</div>
-        <p class="skill-text">
-          Design Thinking<br>
-          Persona building<br>
-          Task analysis<br>
-          Journey mapping<br>
-          Wire Frame & Prototype<br>
-          Design Principle<br>
-          
-        </p>
+  <section id="skills">
+
+   
+    <div class="window">
+      <div class="titlebar">
+        <div class="buttons">
+          <div class="close">
+            <a class="closebutton" href="#"><span><strong>x</strong></span></a>
+            <!-- close button link -->
+          </div>
+          <div class="minimize">
+            <a class="minimizebutton" href="#"><span><strong>&ndash;</strong></span></a>
+            <!-- minimize button link -->
+          </div>
+          <div class="zoom">
+            <a class="zoombutton" href="#"><span><strong>+</strong></span></a>
+            <!-- zoom button link -->
+          </div>
+        </div>
+    
+        <!-- window title -->
       </div>
-      <div class="skill-box">
-        <!-- <i class="skill-icon fa fa-paint-brush"></i> -->
-        <div class="skill-title">DESIGN</div>
-        <p class="skill-text">
-         Adobe CC <br>  
-         Illustrator<br>
-         Photoshop<br>
-         Figma<br>
-        Sketch<br>
-        Procreate<br>
-                  
-        </p>
-      </div>
-      <div class="skill-box">
-        <!-- <i class="skill-icon fa fa-code"></i> -->
-        <div class="skill-title">CODING</div>
-        <p class="skill-text">
-      
-         HTML<br>
-         CSS<br>
-         Javascript<br>
-         Node<br>
-         Bootstrap<br>
-         WordPress<br>
+      <div class="content">
+        <h2 class="heading">MY SKILLS</h2>
+        <!-- window content -->
+        <div class="skills">
+        <ul>
+          <li><i class="fab fa-html5" aria-hidden="true" title="HTML"></i><span class="sr-only">HTML</span><p id="skill-w">HTML</p></li>
+          <li><i class="fab fa-css3-alt" aria-hidden="true" title="CSS"></i><span class="sr-only">CSS</span></li>
+          <li><i class="fab fa-js-square" aria-hidden="true" title="Javascript"></i><span class="sr-only">Javascript</span></li>
+          <li><i class="fab fa-react"></i></li>
+          <li><i class="fab fa-node" aria-hidden="true" title="Node"></i><span class="sr-only">Node</span></li>
+          <li><i class="fas fa-terminal" aria-hidden="true" title="Command Line"></i><span class="sr-only">Command Line</span></li>
+          <li><i class="fab fa-git-alt" aria-hidden="true" title="Git"></i><span class="sr-only">Git</span></li>
+          <li><i class="fab fa-github-square" aria-hidden="true" title="GitHub"></i><span class="sr-only">GitHub</span></li>
+          <li><i class="fab fa-wordpress"></i></li>
+          <li><i class="fab fa-figma"></i></li>
           
-        </p>
+        </div>  
+      </ul>
+
       </div>
     </div>
+    
   </section>
   <section class="contact" id="contact">
-    <h2 class="heading">CONTACT</h2>
-    <form class="contact-form">
-      <input type="text" name="name" placeholder="NAME">
-      <textarea name="message" placeholder="MESSAGE"></textarea>
-      <input type="submit" value="SEND">
-    </form>
-  </section>
-  <footer class="footer">
-    <a href="https://github.com/miya-w">
-      <img src="images/github.svg" alt="github" width="40" height="40" >
-    </a>
-    <a href="https://www.linkedin.com/in/miya-miah-w/">
-      <img src="images/linkedin_black_logo_icon_147114.png" alt="github" width="40" height="40" >
-    </a>
+    <div id="contact-container">
+      
+      <div class="window-os">
+        <div>
+          <h3 class="heading">Contact</h3>
+        </div>
+          <ul>
+         
+            <li><a href="https://github.com/miya-w?tab=repositories" target="_blank"><i class="fab fa-github-square"aria-hidden="true" title="GitHub"></i><span class="sr-only">GitHub<span></a></li>
+            <li><a href="https://www.linkedin.com/in/miya-miah-w/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a></li>      
+            <li><a href="" target="_blank"><i class="fas fa-envelope-square" aria-hidden="true" title="E-mail"></i><span class="sr-only">E-mail</span></a></li>
+            <li><a href="https://medium.com/@miya.miah.w" target="_blank"><i class="fab fa-medium" aria-hidden="true" title="medium"></i><span class="sr-only">Medium</span></a></li>
+        </ul>
+      </div>   
+      
+      
+   </div>
+</section> 
+<footer class="footer">  
       © Miah portfolio
   </footer>
   <script src="lib/placeholders.min.js"></script>
