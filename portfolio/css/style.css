@@ -7,16 +7,14 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: #dfd3c3 no-repeat fixed left bottom;
-  background-size: cover;
-  color: #fff;
+  background: #dfd3c3 ;
   text-align: center;
   font-size: 1.4rem;
   font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
 }
-*, *::before, *::after {
+/* *, *::before, *::after {
   box-sizing: border-box;
-}
+} */
 
 
 /* --------------------------------
@@ -26,9 +24,10 @@ body {
   position: relative;
   display: inline-block;
   margin: 30px 0 15px;
-  padding-bottom: 15px;
+  padding: 15px 0 15px;
   letter-spacing: 2px;
-  font-size: 4rem;
+  font-size: 2rem;
+  color: #333;
 }
 .heading::before,
 .heading::after {
@@ -44,14 +43,16 @@ body {
 }
 .button {
   display: inline-block;
-  width: 200px;
-  padding: 20px;
+  width: 120px;
+  padding: 15px;
   border-radius: 4px;
   background-color: #c7b198;
   color: #fff;
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 1.2rem;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .button:hover {
   opacity: 0.9;
@@ -76,6 +77,43 @@ body {
   overflow: hidden;
   transform: translateY(-50%);    
 }
+/*--------------------------
+ nav
+ -------------------------- */
+
+ nav {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+
+background-color: #ffffff;
+opacity: 0.9;
+background-image: radial-gradient(#dedede 0.9px, #ffffff 0.9px);
+background-size: 18px 18px;
+}
+
+
+/* Style nav links*/
+nav a {
+  color: black;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-family: 'Damion' ;
+}
+
+
+/* Change color on hover */
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-window{
+  background: #fff;
+  margin: auto;
+
+  border: 3px solid black;
+}
 
 
 
@@ -84,14 +122,16 @@ body {
  * header
  * -------------------------------- */
 .header {
-  padding: 170px 0 80px 0;
+  padding: 80px 0 80px 0;
   margin-top: 0;
+
  
 }
 .site-title-sub {
   margin: 0 0 30px;
   letter-spacing: 1px;
-  font-size: 2.2rem;
+  font-size: 6rem;
+  color: #fff;
 }
 .site-title-sub::before,
 .site-title-sub::after {
@@ -100,12 +140,15 @@ body {
   width: 140px;
   height: 2px;
   margin: 0 30px;
-  background-color: #fff;
   vertical-align: middle;
 }
 .site-title {
   margin: 35px 0 40px;
-  font-size: 5rem;
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+.line-1{
+ color: #ffffff;
 }
 .site-description {
   margin-bottom: 50px;
@@ -149,6 +192,10 @@ body {
   background-color: #fff;
   color: #333;
   display: flex;
+  background-color: #fff;
+opacity: 1;
+background-image:  linear-gradient(#d5d5d5 1px, transparent 1px), linear-gradient(to right, #d5d5d5 1px, #f9f9f9 1px);
+background-size: 20px 20px;
   
   
 
@@ -173,7 +220,7 @@ body {
  * -------------------------------- */
 .works {
   padding: 80px 0;
-  background-color: #c7b198;
+
 }
 .works-wrapper {
   display: table;
@@ -190,6 +237,7 @@ body {
 .work-title{
   text-decoration: none;
   color: #fff;
+  font-size: 2rem
  
 }
 
@@ -213,85 +261,227 @@ a:link {
 /* --------------------------------
  * skills
  * -------------------------------- */
-.skills {
-  padding: 80px 0;
+#skills{
   background-color: #fff;
+opacity: 1;
+background-image:  linear-gradient(#e0e0e1 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(to right, #e0e0e1 1.2000000000000002px, #fdfdfd 1.2000000000000002px);
+background-size: 24px 24px;
+padding: 80px 30px;
+
+}
+ .skills {
+
+ padding: 30px 20px;
   color: #333;
+  
 }
 .skills-wrapper {
   display: table;
-  width: 80%;
+  width: 100%;
   margin: 50px auto 0;
   table-layout: fixed;
 }
 .skill-box {
   display: table-cell;
 }
-.skill-icon {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 30px;
-  border: 4px solid;
+
+
+/* Skills section */
+.skills ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.skills li {
+  margin: 0 15px;
+  color: black ;
+  font-size: 40px;
+}
+
+.skills li:hover {
+  color:grey;
+}
+
+
+
+/* window BEGIN */
+a {
+  text-decoration: none;
+}
+
+span {
+  line-height: 9px;
+  vertical-align: 50%;
+}
+
+.window {
+  background: #fff;
+  width: 70vw;
+  
+  margin: auto;
+  margin-top: 2vh;
+  padding-bottom: 2vh ;
+  border: 3px solid black;
+  border-radius: 6px;
+  /* box-shadow: 0px 0px 20px black; */
+}
+
+.titlebar {
+  background-color: #ffffff;
+opacity: 0.8;
+background-image: radial-gradient(#b1b1b1 0.8px, #ffffff 0.8px);
+background-size: 16px 16px;
+  color: black;
+  font-size: 11pt;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  border-top: 1px solid #f3f1f3;
+  border-bottom: 3px solid black;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  cursor: default;
+}
+
+.buttons {
+  padding-left: 8px;
+  padding-top: 10px;
+  float: left;
+  line-height: 0px;
+  
+}
+
+/*.buttons:hover a {
+  visibility: visible;
+}*/
+
+.close {
+  background: grey;
+  font-size: 9pt;
+  width: 11px;
+  height: 11px;
+
   border-radius: 50%;
-  color: #f1b400;
-  font-size: 8rem;
-  line-height: 142px;
+  display: inline-block;
 }
-.skill-title {
-  margin: 0 20px 20px;
-  font-size: 2rem;
+
+
+.closebutton {
+  color: #fff;
+  visibility: hidden;
+  cursor: default;
 }
-.skill-text {
-  font-size: 15px;
-  margin: 0;
-  line-height: 2;
+
+.minimize {
+  background: grey;
+  font-size: 9pt;
+  line-height: 11px;
+  margin-left: 4px;
+  width: 11px;
+  height: 11px;
+
+  border-radius: 50%;
+  display: inline-block;
 }
+
+
+.minimizebutton {
+  color: #9a5518;
+  visibility: hidden;
+  cursor: default;
+}
+
+.zoom {
+  background: grey;
+  font-size: 9pt;
+  line-height: 11px;
+  margin-left: 6px;
+  width: 11px;
+  height: 11px;
+
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+.zoombutton {
+  color: #006519;
+  visibility: hidden;
+  cursor: default;
+}
+
+.content {
+  padding: 10px;
+}
+
+/* window END */
+/* content BEGIN */
+h3 {
+  margin-top: 0px;
+}
+
+/* content END */
+
 
 
 /* --------------------------------
  * contact
  * -------------------------------- */
 .contact {
-  padding: 80px 0 150px;
-}
-.contact-form {
-  width: 50%;
-  margin: 50px auto 0;
-}
-.contact-form input[type=text],
-.contact-form textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 15px;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #fff;
-}
-.contact-form input[type=text]:focus,
-.contact-form textarea:focus {
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
-}
-.contact-form textarea {
-  height: 150px;
-}
-.contact-form input[type=submit] {
-  display: block;
-  width: 200px;
-  margin: 40px auto 0;
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-}
-.contact-form input[type=submit]:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0px 0 50px 0;
 }
 
+
+#contact-container{
+  flex-wrap: wrap;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+
+#contact ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+}
+
+#contact li {
+  list-style: none;
+  margin-right: 20px;
+  font-size: 40px;
+}
+
+#contact i {
+  font-size: 40px;
+  color: black;
+}
+
+#contact i:hover {
+  color: grey;
+}
+
+
+.window-os {
+  background: #fff;
+  width: 45vw;
+  height: 20vh;
+  margin: auto;
+  margin-top: 12.5vh;
+  border: 1px solid black;
+  box-shadow : 10px 10px 0 0 black;
+  align-items: center;
+ 
+}
 
 /* --------------------------------
  * footer
@@ -374,23 +564,44 @@ a:link {
   .skill-box {
     margin: 40px auto;
   }
-  .skill-icon {
-    width: 100px;
-    height: 100px;
-    font-size: 5rem;
-    line-height: 92px;
-  }
   .skill-text {
     margin: 0;
   }
 
-  /* --- contact --- */
-  .contact {
-    padding-bottom: 80px;
-  }
-  .contact-form {
-    width: 80%;
-  }
+   /* Skills Section */
+
+   #skills {
+    margin: 50px 0;
 }
 
+#skills ul {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#skills li {
+    margin: 0 15px;
+}
+
+
+
+/* Contact page */
+
+#contact {
+    margin: 20px 0;
+   
+}
+
+
+  /* --- contact --- */
+
+
+  .window-os {
+   
+    width: 70vw;
+ 
+
+    margin-top: 12.5vh;
+}
+}
 
