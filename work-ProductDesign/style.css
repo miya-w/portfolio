@@ -84,14 +84,14 @@ h1 {
 }
 
 header {
-   background: #c7b198;
+   background: var( --Primary );
    text-align: center;
    padding: 2em 0;
    margin-bottom: 3em;
 }
 
 footer {
-   background: #c7b198;
+   background: var( --Primary );
    color: white;
    /* text-align: center; */
    padding: 3rem;

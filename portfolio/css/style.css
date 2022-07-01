@@ -16,6 +16,15 @@ body {
   box-sizing: border-box;
 } */
 
+/* #c7b198; */
+:root {
+  --white: #fff;
+  --Primary: #c7b198; 
+  --second: #333;
+  --third: #888;
+  --color-grey: #596e79;
+  
+}
 
 /* --------------------------------
  * parts
@@ -46,7 +55,7 @@ body {
   width: 120px;
   padding: 15px;
   border-radius: 4px;
-  background-color: #c7b198;
+  background-color: var( --Primary );
   color: #fff;
   text-decoration: none;
   letter-spacing: 1px;
