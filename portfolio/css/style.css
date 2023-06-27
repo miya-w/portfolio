@@ -90,13 +90,18 @@ body {
  nav
  -------------------------- */
 
- nav {
+nav {
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 3px solid #888;
 
 background-color: #ffffff;
-opacity: 0.9;
+
+opacity: 1;
 background-image: radial-gradient(#dedede 0.9px, #ffffff 0.9px);
 background-size: 18px 18px;
 }
@@ -121,7 +126,7 @@ nav a:hover {
   background: #fff;
   margin: auto;
 
-  border: 3px solid black;
+
 }
 
 
